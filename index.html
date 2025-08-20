@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Love Letter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="scene">
+    <button id="envelope" class="envelope" aria-expanded="false" aria-controls="card">
+      <span class="flap" aria-hidden="true"></span>
+      <span class="front" aria-hidden="true"></span>
+      <span class="seal" aria-hidden="true">❤</span>
+      <span class="visually-hidden">Open letter</span>
+    </button>
+
+    <article id="card" class="card" hidden>
+      <h1>For You 💌</h1>
+      <p>
+        This is a tiny web love letter. You can edit this text, add emojis,
+        or even include a photo and music below.
+      </p>
+      <figure>
+        <img src="assets/photo.jpg" alt="A favorite memory" />
+        <figcaption>A favorite memory together</figcaption>
+      </figure>
+      <audio id="bgm" src="assets/music.mp3" preload="auto" controls></audio>
+      <p class="signature">With love, —Your Name</p>
+    </article>
+
+    <div id="hearts" aria-hidden="true"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
